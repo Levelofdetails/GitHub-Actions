@@ -1,0 +1,10 @@
+name: Hello World
+#Triggers are configured under 
+on: workflow_dispatch
+jobs: 
+  #provide name of the job
+  dbtjob:
+      runs-on: ubuntu-latest #runners
+      steps:
+        - name: Hello Step
+          run: echo "Welcome to Github Actions"
