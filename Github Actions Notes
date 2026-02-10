@@ -1,0 +1,40 @@
+## Github and Github Actions
+Github was launched in 2008
+Microsoft acquired Github in 2018
+  1. GitHub Actions
+  2. GitHub Advanced Security
+  3. GitHub Container Registry
+  4. GitHub Copilot
+
+GitHub Workflow Structure
+
+Under Repository
+Workflow1
+    -> Job (Runners) Build/Test Jobs...each Job we have multiple steps
+    -> 
+WorkFlow2
+    -> Job (Runners) Build/Test Jobs...each Job we have multiple steps
+    -> 
+
+Goto Actions
+Configure-> Simple Workflow
+
+.github/workflows/blank.yaml or yml
+****************************************************************************
+name: Hello World
+#Triggers are configured under 
+on: workflow_dispatch
+jobs: 
+  #provide name of the job
+  dbtjob:
+      runs-on: ubuntu-latest #runners
+      steps:
+        - name: Hello Step
+          run: echo "Welcome to Github Actions"
+
+
+
+
+
+
+
